@@ -1,5 +1,5 @@
 # Blogster
 
-Full stack, CRUD blog app built with Node.js, Express, MongoDB, Mongoose, Marked.js and Bootstrap (plus Bootswatch).
+Full-stack, CRUD application built with Bootstrap, Node.js, Express and MongoDB. Allows the user to create, read, update and delete articles.
 
 Click <a href="https://ar-blogster.herokuapp.com/">**here**</a> for a live demo.
