@@ -10,13 +10,14 @@
 </head>
 <body>
   <div class="container">
-    <a href="/" class="text-decoration-none"><h1 class="mb-3 mt-4 display-4 font-weight-bold ">Blogster</h1></a>
-    <hr>
+    <div class="main">
+      <a href="/" class="text-decoration-none"><h1 class="mb-3 mt-4 display-4 font-weight-bold ">Blogster</h1></a>
     <h1 class="mb-4">New Article</h1>
 
     <form action="/articles" method="POST">
       <%- include('_form_fields') %>
     </form>
+    </div>
   </div>
 </body>
 </html>

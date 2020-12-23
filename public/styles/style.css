@@ -31,6 +31,12 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .main {
+    margin: 0rem 0rem !important;
+  }
+}
+
 @media (min-width: 768px) {
   .container,
   .container-sm,
@@ -87,11 +93,22 @@ body {
 }
 
 .card-title {
+  font-size: 1.75rem;
   text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.main {
+  margin: 0 3.25rem;
 }
 
 .card-subtitle {
   font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.15rem 0.25rem;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  opacity: 0.8;
 }
 
 .card-body {
@@ -104,11 +121,12 @@ body {
   display: flex;
   justify-content: flex-end;
   margin-top: 1.5rem;
+  border-radius: 5px;
 }
 
 .btn {
   font-size: 0.9rem;
-  padding: 0.3rem;
+  padding: 0.2rem 0.3rem;
   margin: 0 0.2rem;
 }
 

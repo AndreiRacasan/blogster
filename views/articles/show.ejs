@@ -10,25 +10,26 @@
 </head>
 <body>
   <div class="container">
-    <a href="/" class="text-decoration-none"><h1 class="mb-3 mt-4 display-4 font-weight-bold ">Blogster</h1></a>
-    <hr>
-    <h1 class="mb-1"><%= article.title %></h1>
-    <div class="text-muted mb-2">
-      <%= article.createdAt.toLocaleDateString() %>
-    </div>
-    <p><%= article.description %></p>
-
-    <div id="markdown-article">
-      <div class="row">
-        <div class="col-6">
-          <a href="/" class="btn btn-secondary mb-3">All Articles</a>
-        </div>
-        <div class="col-6 d-flex justify-content-end align-items-center">
-          <a href="/articles/edit/<%= article.id %>" class="btn btn-info mb-3">Edit Article</a>
-        </div>
+    <div class="main">
+      <a href="/" class="text-decoration-none"><h1 class="mb-3 mt-4 display-4 font-weight-bold ">Blogster</h1></a>
+      <h1 class="mb-1"><%= article.title %></h1>
+      <div class="text-muted mb-2">
+        <%= article.createdAt.toLocaleDateString() %>
       </div>
-      <hr>
-      <%- article.sanitisedHTML %>
+      <p><%= article.description %></p>
+
+      <div id="markdown-article">
+        <div class="row">
+          <div class="col-6">
+            <a href="/" class="btn btn-secondary mb-3">All Articles</a>
+          </div>
+          <div class="col-6 d-flex justify-content-end align-items-center">
+            <a href="/articles/edit/<%= article.id %>" class="btn btn-info mb-3">Edit Article</a>
+          </div>
+        </div>
+        <hr>
+        <%- article.sanitisedHTML %>
+      </div>
     </div>
   </div>
 </body>
